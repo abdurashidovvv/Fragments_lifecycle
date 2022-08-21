@@ -49,6 +49,7 @@ class BlankFragment : Fragment() {
 
             val manager=parentFragmentManager
             manager.beginTransaction()
+                .setCustomAnimations(R.anim.fragment_anim_2, R.anim.fragment_anim_1, R.anim.fragment_anim_2, R.anim.fragment_anim_1)
                 .replace(R.id.my_container, blankFragment2)
                 .addToBackStack(blankFragment2.toString())
                 .commit()
